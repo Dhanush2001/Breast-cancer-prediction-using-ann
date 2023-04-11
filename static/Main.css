@@ -1,0 +1,21 @@
+.bg-image{
+     background-image: url("https://static.vecteezy.com/system/resources/previews/004/493/181/original/hospital-building-for-healthcare-background-illustration-with-ambulance-car-doctor-patient-nurses-and-medical-clinic-exterior-free-vector.jpg");
+     height: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.bg-img{
+       background-image: url("https://static.vecteezy.com/system/resources/previews/004/493/181/original/hospital-building-for-healthcare-background-illustration-with-ambulance-car-doctor-patient-nurses-and-medical-clinic-exterior-free-vector.jpg");
+opacity: 0.5
+}
+.container{
+          background-image: url("https://img.freepik.com/free-vector/breast-cancer-awareness-ribbon-background-vector-illustration-eps-10_87521-3649.jpg");
+          height: 80%;
+          width: 50%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
