@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Breast Cancer prediction</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ url_for('static',filename='Main.css') }}">
+</head>
+<body class="bg-image" >
+<center>
+<pre>
+<form action={{ url_for('predict')}} method="post" class="container">
+ <h1>Breast Cancer Prediction</h1>
+  <strong>
+  <label>Radius Mean             : </label><input type="number" name="radius_mean" step="any" placeholdeer="mean radius"><br>
+  <label>Texture Mean            : </label><input type="number" name="texture_mean" placeholdeer="mean texture" step="any"><br>
+  <label>Perimeter Mean          : </label><input type="number" name="perimeter_mean" placeholdeer="mean perimeter" step="any"><br>
+  <label>Area Mean               : </label><input type="number" name="area_mean" placeholdeer="mean area" step="any"><br>
+  <label>Smoothness Mean         : </label><input type="number" name="smoothness_mean" placeholdeer="mean smoothness" step="any"><br>
+  <label>Compactness Mean        : </label><input type="number" name="compactness_mean" placeholdeer="mean compactness" step="any"><br>
+  <label>Concavity Mean          : </label><input type="number" name="concavity_mean" placeholdeer="mean concavity" step="any"><br>
+  <label>Concave Point Mean      : </label><input type="number" name="concave_point_mean" placeholdeer="mean concave points" step="any"><br>
+  <label>Symmetry Mean           : </label><input type="number" name="symmetry_mean" placeholdeer="mean symmetry" step="any"><br>
+  <label>Fractal Dimension Mean  : </label><input type="number" name="fractal_dimension_mean" placeholdeer="mean fractal dimension" step="any"><br>
+  <label>Radius SE               : </label><input type="number" name="radius_se"  placeholdeer="radius error" step="any"><br>
+  <label>Texture SE              : </label><input type="number" name="texture_se" placeholdeer="texture error" step="any"><br>
+  <label>Perimeter SE            : </label><input type="number" name="perimeter_se"  placeholdeer="perimeter error"step="any"><br>
+  <label>Area SE                 : </label><input type="number" name="area_se" placeholdeer="area error" step="any"><br>
+  <label>Smoothness SE           : </label><input type="number" name="smoothness_se" placeholdeer="smoothness error" step="any"><br>
+  <label>Compactness SE          : </label><input type="number" name="compactness_se" placeholdeer="compactness error" step="any"><br>
+  <label>Concavity SE            : </label><input type="number" name="concavity_se" placeholdeer="concavity error" step="any"><br>
+  <label>Concave Point SE        : </label><input type="number" name="concave_point_se" placeholdeer="concave points error" step="any"><br>
+  <label>Symmetry SE             : </label><input type="number" name="symmetry_se" placeholdeer="symmetry error" step="any"><br>
+  <label>Fractal Dimension SE    : </label><input type="number" name="fractal_dimension_se" placeholdeer="fractal dimension error" step="any"><br>
+  <label>Radius Worst            : </label><input type="number" name="radius_worst" placeholdeer="worst radius" step="any"><br>
+  <label>Texture Worst           : </label><input type="number" name="texture_worst" placeholdeer="worst texture" step="any"><br>
+  <label>Perimeter Worst         : </label><input type="number" name="perimeter_worst" placeholdeer="worst perimeter" step="any"><br>
+  <label>Area Worst              : </label><input type="number" name="area_worst" placeholdeer="worst area'" step="any"><br>
+  <label>Smoothness Worst        : </label><input type="number" name="smoothness_worst" placeholdeer="worst smoothness" step="any"><br>
+  <label>Compactness Worst       : </label><input type="number" name="compactness_worst" placeholdeer="worst compactness" step="any"><br>
+  <label>Concavity Worst         : </label><input type="number" name="concavity_worst" placeholdeer="worst concavity" step="any"><br>
+  <label>Concave Point Worst     : </label><input type="number" name="concave_point_worst" placeholdeer="worst concave points" step="any"><br>
+  <label>Symmetry Worst          : </label><input type="number" name="symmetry_worst" placeholdeer="worst symmetry" step="any"><br>
+  <label>Fractal Dimension Worst : </label><input type="number" name="fractal_dimension_worst" placeholdeer="worst fractal dimension" step="any"><br>
+  <button type="predict" value="Predict">Predict</button></strong><br>
+</form>
+</pre>
+</center>
+{{ prediction_text}}
+</body>
+</html>
