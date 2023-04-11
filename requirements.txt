@@ -8,8 +8,9 @@ numpy
 scipy
 scikit-learn
 matplotlib
+keras
 pandas
 tensorflow
 tensorflow_hub
 Pillow
-keras
+
