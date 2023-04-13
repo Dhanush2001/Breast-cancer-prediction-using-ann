@@ -10,7 +10,7 @@ model=load_model("model.h5")
 def home():
     return render_template('Main.html')
 
-@app.route("/predict", methods=['POST'])
+@app.route("/predict")
 def predict():
     input_features =[float(x) for x in request.form.values()]
     features_values=[np.array(input_features)]
