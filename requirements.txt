@@ -8,9 +8,9 @@ numpy
 scipy
 scikit-learn
 matplotlib
-keras
+keras==2.12.0
 pandas
-tensorflow
+tensorflow==2.12.0
 tensorflow_hub
 Pillow
 
