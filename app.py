@@ -3,7 +3,7 @@ import pandas as pd
 from flask import Flask,request,render_template
 from keras.models import load_model
 
-app=Flask(__name__)
+app=Flask(__name__,template_folder='Templates')
 model=load_model("model.h5")
 
 @app.route("/")
