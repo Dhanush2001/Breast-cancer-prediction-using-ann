@@ -27,8 +27,8 @@ def predict():
     output=model.predict(df)
     print(output)
     if output>0.5:
-        return render_template("Malignant.html")
+        return render_template('Malignant.html')
     else:
-        return render_template("Benign.html")
+        return render_template('Benign.html')
 if __name__ =="__main__":
     app.run(debug=True)
