@@ -8,7 +8,7 @@ model=load_model("model.h5")
 
 @app.route("/")
 def home():
-    return render_template('./Templates/Main.html')
+    return render_template('Main.html')
 
 @app.route("/predict", methods=['POST'])
 def predict():
