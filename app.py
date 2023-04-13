@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
 from flask import Flask,request,render_template
-import pickle
+from keras.models import load_model
 
 app=Flask(__name__)
-model=pickle.load(open('model.pkl','rb'))
+model=load_model("model.h5")
 
 @app.route("/")
 def home():
